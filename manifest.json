@@ -1,0 +1,22 @@
+{
+  "name": "Auto-Refresh On Focus",
+  "version": "0.1",
+  "description": "Trial run at building an extension that auto refreshes a tab when it becomes your active tab",
+  "author": "Jacob Burton",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs",
+    "http://*/",
+    "https://*/"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "icons8-synchronize-16.png"
+    },
+    "default_title": "Refresh open tickets on focus"
+
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
